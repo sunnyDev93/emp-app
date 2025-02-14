@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>Edit Employee</h2>
+<mat-dialog-content>
+  <form [formGroup]="editForm">
+    <mat-form-field>
+      <input matInput placeholder="First Name" formControlName="firstName" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Last Name" formControlName="lastName" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Age" formControlName="age" type="number" min="18" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="City" formControlName="city" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Street" formControlName="street" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Department" formControlName="department" />
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onSave()">Save</button>
+</mat-dialog-actions>
