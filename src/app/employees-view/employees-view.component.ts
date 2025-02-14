@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import { map, Observable } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { EditDialogComponent } from '../edit-dialog/edit-dialog.component';
-import { addEmployee, loadEmployees, updateEmployee } from './store/employees.actions';
+import { loadEmployees, updateEmployee } from './store/employees.actions';
 import { MatTableModule } from '@angular/material/table';
 import { CommonModule } from '@angular/common';
 import { Employee } from '../models/employee.interface';
